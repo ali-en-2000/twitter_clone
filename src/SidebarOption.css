@@ -1,0 +1,9 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebarOption .icons {
+    padding: 20px;
+}
