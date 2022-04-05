@@ -1,0 +1,10 @@
+.sidebar__tweet{
+    width: 100%;
+    background-color: var(--Twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+}  

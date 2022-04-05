@@ -1,7 +1,7 @@
 import React from 'react'
+import './Sidebar.css'
 import {TwitterOutlined, HomeOutlined, SearchOutlined, BellOutlined, MailOutlined, TagOutlined, ProfileOutlined, UserOutlined, DashOutlined   } from '@ant-design/icons';
-// import { HomeOutlined} from '@ant-design/icons'
-import './Sidebar.css';
+import { Button } from 'antd';
 import SidebarOption from './SidebarOption';
 
 function Sidebar() {
@@ -9,7 +9,7 @@ function Sidebar() {
     <div>
         {/* Twitter cions */}
         <TwitterOutlined/>
-        <SidebarOption Icon={HomeOutlined} text="Home"/>
+        <SidebarOption active Icon={HomeOutlined} text="Home"/>
         <SidebarOption Icon={SearchOutlined} text="Explore"/>
         <SidebarOption Icon={BellOutlined} text="Notifications"/>
         <SidebarOption Icon={MailOutlined } text="messages"/>
@@ -18,22 +18,8 @@ function Sidebar() {
         <SidebarOption Icon={UserOutlined} text="Profile"/>
         <SidebarOption Icon={DashOutlined} text="More"/>
 
-
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        {/* sidebar option */}
-        
-
         {/* Botton Tweet */}
-
+        <Button className='sidebar__tweet'  > Tweet</Button>
     </div>
   )
 }

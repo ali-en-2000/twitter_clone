@@ -4,6 +4,21 @@
     cursor: pointer;
 }
 
+.sidebarOption:hover{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--Twitter-color);
+    transition: color 100ms ease-out;
+}
+
 .sidebarOption .icons {
     padding: 20px;
+}
+.sidebarOption > h2{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.sidebarOption--active{
+    color: var(--Twitter-color);
 }
