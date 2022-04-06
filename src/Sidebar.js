@@ -6,9 +6,9 @@ import SidebarOption from './SidebarOption';
 
 function Sidebar() {
   return (
-    <div>
+    <div className='sidebar'>
         {/* Twitter cions */}
-        <TwitterOutlined/>
+        <TwitterOutlined className='sidebar__twitterIcon'/>
         <SidebarOption active Icon={HomeOutlined} text="Home"/>
         <SidebarOption Icon={SearchOutlined} text="Explore"/>
         <SidebarOption Icon={BellOutlined} text="Notifications"/>
