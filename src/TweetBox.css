@@ -1,0 +1,29 @@
+.ant-avatar-image img{
+    width: 30px !important;
+    height: 30px !important;
+    background-color: rgb(248, 203, 53);
+    border-radius: 50%;
+    padding-bottom: 2px;
+
+}
+
+.tweetBox{
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--Twitter-backgroun);
+    padding-right: 10px;
+}
+.tweetBox > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetBox__input{
+    padding: 20px;
+    display: flex;
+}
+.tweetBox__input > input{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+}
