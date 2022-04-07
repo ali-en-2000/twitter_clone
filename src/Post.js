@@ -1,7 +1,6 @@
 import React from 'react'
 import './Post.css'
-import { Avatar, Badge  } from 'antd'
-import { ClockCircleOutlined } from '@ant-design/icons';
+import { Avatar  } from 'antd'
 import { VerifiedOutlined, HeartOutlined, MessageOutlined, VerticalAlignTopOutlined, RedoOutlined} from '@ant-design/icons';
 
 function Post({
@@ -12,7 +11,6 @@ text,
 image,
 avatar
 }) {
-    const [show, setShow] = React.useState(true);
 
   return (
     <div className='post'>
