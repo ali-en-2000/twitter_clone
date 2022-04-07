@@ -15,24 +15,26 @@ avatar
   return (
     <div className='post'>
         <div className='post__avatar'>
-        <Avatar src="https://joeschmoe.io/api/v1/random" />
+        <Avatar src={avatar} />
         </div>
 
         <div className='post__body'>
             <div className='post__header'>
                 <div className='post__headerText'>
-                    <h3>refeh ali {''}
+                    <h3>{dispalayName}{''}
                         <span className='post__headerSpecial'>
-                        <VerifiedOutlined className='post__badge'/> @Doshemon Ali
+                        {verified && <VerifiedOutlined className='post__badge'/>}
+                         @{username}
                         </span>
                     </h3>
                 </div>
                 <div className='post__headerDecription'>
-                    <p>I challenge you to build a Twitter clone</p>
+                    <p>{text}</p>
                 </div>
             </div>
-            <img src='https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif' alt=''></img>
+            <img src={image} alt=''></img>
             <div className='post__footer'>
+
             <MessageOutlined />
             <RedoOutlined />
             <HeartOutlined />
