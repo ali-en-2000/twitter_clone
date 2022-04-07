@@ -4,30 +4,16 @@ import { Avatar } from 'antd'
 import { Button } from 'antd';
 
 function TweetBox() {
-  return (
+  return (      
     <div className='tweetBox'>
         <form>
             <div className='tweetBox__input'>
                 <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"/>
-                <br/>
                 <input placeholder='what is new?' type="text"></input>
-                {/* <input placeholder='Enter image URL' type="text"></input> */}
             </div>
+            <input className='tweetBox__imageInput' placeholder='Optiona: Enter image URL' type="text"></input>
 
-
-            <Button type="primary" danger>
-      Primary
-    </Button>
-    <Button danger>Default</Button>
-    <Button type="dashed" danger>
-      Dashed
-    </Button>
-    <Button type="text" danger>
-      Text
-    </Button>
-    <Button type="link" danger>
-      Link
-    </Button>
+            <Button className='tweetBox__tweetButton'>Tweet</Button>
         </form>
     </div>
   )

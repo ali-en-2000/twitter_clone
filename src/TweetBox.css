@@ -22,8 +22,27 @@
     display: flex;
 }
 .tweetBox__input > input{
+    position: relative;
     flex: 1;
     margin-left: 20px;
     font-size: 20px;
     border: none;
+}
+
+.tweetBox__imageInput{
+    border: none;
+    padding: 20px;
+}
+
+.tweetBox__tweetButton{
+    background-color: var(--Twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    text-transform: inherit;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin: 20px;
+    margin-left: auto;
 }
