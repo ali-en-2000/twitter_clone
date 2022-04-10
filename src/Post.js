@@ -1,19 +1,19 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import './Post.css'
 import { Avatar  } from 'antd'
 import { VerifiedOutlined, HeartOutlined, MessageOutlined, VerticalAlignTopOutlined, RedoOutlined} from '@ant-design/icons';
 
-function Post({
+const Post = forwardRef(({
 dispalayName,
 username,
 verified,
 text,
 image,
 avatar
-}) {
+}, ref) =>{
 
   return (
-    <div className='post'>
+    <div className='post' ref={ref}>
         <div className='post__avatar'>
         <Avatar src={avatar} />
         </div>
@@ -45,7 +45,7 @@ avatar
         </div>
         
     </div>
-  )
-}
+  );
+});
 
 export default Post
